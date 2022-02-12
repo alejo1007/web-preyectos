@@ -1,7 +1,4 @@
 /*estilos de index*/
-h1 {
-  color: white;
-}
 
 .tituloFunciones {
   color: green;
@@ -37,6 +34,7 @@ img {
 }
 img svg {
   vertical-align: left;
+  transform: matrix(20);
 }
 
 .container {
@@ -240,7 +238,7 @@ fieldset {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: orange;
+  background-color: rgb(226, 190, 123);
 }
 
 /*@media jquery clase profesor*/
@@ -248,7 +246,7 @@ fieldset {
 /*animacion */
 
 @keyframes form-right {
-  0% {
+  20% {
     opacity: 0;
     transform: translateX(80px);
   }
