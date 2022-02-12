@@ -1,0 +1,255 @@
+/*estilos de index*/
+h1 {
+  color: white;
+}
+
+.tituloFunciones {
+  color: green;
+}
+
+table {
+  border: 1px solid orange;
+}
+#sectionindex {
+  background-color: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+img svg {
+  vertical-align: left;
+}
+
+.container {
+  width: 100%;
+  margin: 0% auto;
+  max-width: 1320px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; /* para que se pasen abajo si no entran */
+}
+
+.col {
+  flex: 1;
+}
+
+header {
+  background-color: orange;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: none;
+}
+.nav__item {
+  margin: 0 0 0 1.5rem;
+}
+.nav__link {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover .nav__link:focus {
+  opacity: 0.65;
+}
+.intro-section {
+  background-color: orange;
+  padding: 8rem 0 0 0;
+}
+
+.display-2 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 4.5rem;
+  font: weight 400px;
+}
+
+.display-2--intro {
+  font-weight: 700;
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.display-2--description {
+  font-size: 1.4rem;
+  margin-top: 400;
+}
+.img-box {
+  margin-top: 0;
+  text-align: right;
+}
+.download__logo-box {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+/*estilo footer*/
+.footer-sm {
+  padding-top: 1rem;
+  background-color: white;
+}
+.footer-sm-a {
+  background-color: grey;
+}
+.footer-sm-a-i {
+  font-size: 1rem;
+}
+.footer-sm--icons {
+  text-align: right;
+  padding: 1.5rem;
+}
+.nav__list {
+  display: inline;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+nav ul li a {
+  color: black;
+  padding: 15px;
+  text-decoration: green;
+}
+/*main section textos*/
+
+main header {
+  background-color: orange;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: none;
+}
+
+/*seccion caja contacto*/
+fieldset {
+  background-color: orange;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: none;
+}
+.felx-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+/*card contenido*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: orange;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* contenedor grid*/
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: orange;
+}
+
+/*@media jquery clase profesor*/
+
+/*animacion */
+
+@keyframes form-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+}
